@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\Dashaj\Desktop\ConsegnaMap\project\.metadata\.plugins\org.eclipse.jdt.core
+1376567476.index
+1509799344.index
+262142283.index
+1865797976.index
+2461411560.index

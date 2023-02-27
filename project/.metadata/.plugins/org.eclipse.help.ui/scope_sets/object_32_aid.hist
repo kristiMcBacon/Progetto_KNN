@@ -1,0 +1,4 @@
+#Tue Jul 19 20:17:57 CEST 2022
+__DEFAULT__=false
+expression=object aid
+org.eclipse.help.ui.localSearch.master=true

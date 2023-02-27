@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.AppKnnController">
+   <children>
+      <HBox fx:id="supP" prefHeight="30.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ComboBox fx:id="tipo" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="150.0" promptText="Seleziona tipo file">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ComboBox>
+            <TextField fx:id="input" alignment="CENTER" prefHeight="30.0" prefWidth="300.0" promptText="inserisci nome file (senza estensione)">
+               <font>
+                  <Font name="Calibri Italic" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Button fx:id="carica" mnemonicParsing="false" onAction="#caricaTset" prefHeight="30.0" prefWidth="150.0" text="CARICA" textFill="#2ca13f">
+               <font>
+                  <Font name="Segoe UI Black" size="14.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="470.0" prefWidth="600.0">
+         <children>
+            <ScrollPane fx:id="stampa" prefHeight="470.0" prefWidth="300.0">
+               <content>
+                  <TextArea fx:id="trainingSet" editable="false" prefHeight="5000.0" prefWidth="300.0" promptText="STAMPA TRAINING SET" />
+               </content>
+            </ScrollPane>
+            <VBox prefHeight="370.0" prefWidth="300.0">
+               <children>
+                  <Button fx:id="inputExample" alignment="CENTER" mnemonicParsing="false" onAction="#caricaExample" prefHeight="30.0" prefWidth="300.0" text="Inserisci esempio">
+                     <font>
+                        <Font name="Segoe UI Black Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <SubScene fx:id="panello" height="440.0" width="300.0">
+                    <root>
+                      <Region />
+                    </root>
+                  </SubScene>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

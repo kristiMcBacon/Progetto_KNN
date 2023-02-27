@@ -1,4 +1,4 @@
-# Progetto_KNN_Java
+# Progetto KNN in Java
 Proggetto KNN realizzato per l'esame di Metodi Avanzati di Programmazione (MAP), UniBa.
 In questo repository c'è il proggetto base contenuto nella cartella "project", e il proggetto con estensione, che consiste in un interfaccia client, realizzata con JavaFx, contenuto nella cartella "project-with-interface".
 I progetti contengono il codice sorgente e il javadoc del client e del server nelle rispettive cartelle.
